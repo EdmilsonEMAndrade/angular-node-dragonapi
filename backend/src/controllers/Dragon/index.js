@@ -14,12 +14,13 @@ class DragonController {
     }
 
     async store(req, res) {
-        const { name, type, history } = req.body;
+        const { name, type, history, imageURL } = req.body;
 
         const dragon = new Dragon({
             name: name,
             type: type,
-            history: history
+            history: history,
+            imageURL: imageURL
         });
         console.log(dragon);
         try {
@@ -31,11 +32,12 @@ class DragonController {
     }
 
     async update(req, res) {
-        const {name, type, history } = req.body;
+        const {name, type, history, imageURL } = req.body;
         
         res.dragon.name = name;
         res.dragon.type = type;
         res.dragon.history = history;
+        res.dragon.imageURL = imageURL;
         res.dragon.updateAt = Date.now();
     
         try{

@@ -13,6 +13,10 @@ const dragonSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    imageURL:{
+        type:String,
+        required:true
+    },
     createdAt:{
         type: Date,
         required:true,
