@@ -1,5 +1,5 @@
 export interface Dragon {
-    _id: string;
+    _id?: string;
     name: string;
     type: string;
     history: string;
@@ -8,5 +8,5 @@ export interface Dragon {
     updatedAt: Date
 }
 
-export type ShowDragon = Omit<Dragon, "_id" | "createdAt" | "updatedAt">;
+export type ShowDragon = Omit<Dragon, "createdAt" | "updatedAt">;
 

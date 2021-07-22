@@ -8,7 +8,7 @@ import { ShowDragon } from '../dragon.model';
 })
 export class CardsComponent implements OnInit {
   @Input()
-  dragon:ShowDragon={name: '', type:'', history:'', imageURL: '' }
+  dragon:ShowDragon={_id:'', name: '', type:'', history:'', imageURL: '' }
 
   constructor() { }
 
