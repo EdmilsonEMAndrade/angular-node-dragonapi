@@ -2,8 +2,23 @@ const Dragon = require('../../models/Dragon');
 
 class DragonController {
     async index(req, res) {
+        const { limit, page } = req.query;
+        var nDragons = 3;
+        var pageView = 0;
+        if(limit){
+            nDragons = parseInt(limit);
+        }
+        if(page){
+            pageView = parseInt(page);
+        }
+
         try{
-            const dragons = await Dragon.find();
+            const dragons = await Dragon.find()
+                                        .limit( nDragons )
+                                        .skip( pageView > 0 ? ( ( pageView - 1 ) * nDragons ) : 0 );
+            if(dragons.length == 0){
+                return res.status(400).json({message:'Page not found'});
+            }
             return res.json(dragons);
         }catch(err){
             return res.status(400).json({message: err.message});
