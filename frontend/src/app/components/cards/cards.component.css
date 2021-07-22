@@ -1,0 +1,30 @@
+.card{
+    border-radius: 1rem 0 1rem 0;
+    width: 18rem;
+    height: 414px;
+    position: relative;
+}
+.buttons{
+ position: absolute;
+ width: 100%;
+ bottom: 0;
+}
+.bi-trash{
+    border-radius: 0 0 1rem 0;
+    color: red;
+}
+.card img{
+    border-radius: 1rem 0 0;
+}
+.card-body{
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    background-color: gray; 
+    padding: .5rem;
+}
+.card-text{
+    padding: .5rem;
+    font-size: large;
+}

@@ -1,8 +1,23 @@
-<!-- <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src={{src}} alt={{name}}>
+<div class="card">
+    <img class="card-img-top" src={{dragon.imageURL}} alt={{dragon.name}}>
     <div class="card-body">
-        <h5 class="card-title">{{name}}</h5>
-        <p class="card-text">{{history}}</p>
-
+        <h4 class="card-title text-center"><strong>{{dragon.name.toUpperCase()}}</strong></h4>
+        <p class="card-text"><strong>Espécie:</strong> {{dragon.type}}</p>
+        <h6 class="card-title text-center"><strong>História</strong></h6>
+        <div *ngIf="(dragon.history.length > 59) ; then thenBlock else elseBlock"></div>
+        <ng-template class="card-text" #thenBlock>
+            <div class="card-text">
+                {{dragon.history.substring(0,59)}}...
+            </div>
+        </ng-template>
+        <ng-template class="card-text" #elseBlock>
+            <div class="card-text">
+                {{dragon.history}}
+            </div>
+        </ng-template>
+        <div class='buttons'>
+            <button class="w-50 bi-pencil-square"></button>
+            <button class="w-50 bi-trash"></button>
+        </div>
     </div>
-</div> -->
+</div>

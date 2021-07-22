@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ShowDragon } from '../dragon.model';
 
 @Component({
   selector: 'app-cards',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
+  @Input()
+  dragon:ShowDragon={name: '', type:'', history:'', imageURL: '' }
 
   constructor() { }
 
