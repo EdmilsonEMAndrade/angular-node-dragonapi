@@ -10,6 +10,11 @@ import { ListCardsComponent } from './components/list-cards/list-cards.component
 import { BodyComponent } from './view/body/body.component';
 import { RegisterComponent } from './components/register/register.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbToastDirective } from './directives/ngb-toast.directive';
+import { ToastsContainerComponent } from './components/toasts-container/toasts-container.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +23,14 @@ import { RegisterComponent } from './components/register/register.component';
     CardsComponent,
     ListCardsComponent,
     BodyComponent,
-    RegisterComponent
+    RegisterComponent,
+    NgbToastDirective,
+    ToastsContainerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
