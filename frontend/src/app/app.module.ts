@@ -25,7 +25,7 @@ import { ToastsContainerComponent } from './components/toasts-container/toasts-c
     BodyComponent,
     RegisterComponent,
     NgbToastDirective,
-    ToastsContainerComponent
+    ToastsContainerComponent,
   ],
   imports: [
     BrowserModule,

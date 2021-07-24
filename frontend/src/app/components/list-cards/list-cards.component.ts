@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShowDragon } from '../dragon.model';
+import { ShowDragon } from '../dragon/dragon.model';
 
 @Component({
   selector: 'app-list-cards',
@@ -14,19 +14,19 @@ export class ListCardsComponent implements OnInit {
     imageURL: "https://i.ytimg.com/vi/8bkB_mcWjg0/maxresdefault.jpg"
   },
   {
-    name: "Teste",
+    name: "Teste1",
     type: "Voador",
-    history: "Era uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez",
+    history: "Era uma vez Era uma vez Era uma vez Era uma vezEra x \n y uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez Era uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vezEra uma vez",
     imageURL: "https://i.ytimg.com/vi/8bkB_mcWjg0/maxresdefault.jpg"
   },
   {
-    name: "Teste",
+    name: "Teste2",
     type: "Voador",
     history: "Era uma vez",
     imageURL: "https://i.ytimg.com/vi/8bkB_mcWjg0/maxresdefault.jpg"
   },
   {
-    name: "Teste",
+    name: "Teste3",
     type: "Voador",
     history: "Era uma vez",
     imageURL: "https://i.ytimg.com/vi/8bkB_mcWjg0/maxresdefault.jpg"

@@ -7,7 +7,6 @@ import { Injectable, TemplateRef  } from '@angular/core';
 export class ToastService {
 
   toasts: any[] = [];
-
   // Push new Toasts to array with content and options
   show(textOrTpl: string | TemplateRef<any>, options: any = {}) {
     this.toasts.push({ textOrTpl, ...options });
