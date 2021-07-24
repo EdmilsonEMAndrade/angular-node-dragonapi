@@ -9,4 +9,4 @@ export interface Dragon {
 }
 
 export type ShowDragon = Omit<Dragon, "createdAt" | "updatedAt">;
-
+export type registerDragon = Omit<Dragon, "_id" | "createdAt" | "updatedAt">;

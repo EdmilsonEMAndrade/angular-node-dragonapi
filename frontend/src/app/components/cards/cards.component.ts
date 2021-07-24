@@ -15,7 +15,8 @@ export class CardsComponent implements OnInit {
   @Input()
   dragon:ShowDragon={_id:'', name: '', type:'', history:'', imageURL: '' };  
   
-  constructor(private toastService: ToastService, private modalService: NgbModal) { }
+  constructor(private toastService: ToastService, 
+                private modalService: NgbModal) { }
 
   ngOnInit(): void {}
 
