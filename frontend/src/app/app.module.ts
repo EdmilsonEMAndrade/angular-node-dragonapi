@@ -14,7 +14,9 @@ import { NgbToastDirective } from './directives/ngb-toast.directive';
 import { ToastsContainerComponent } from './components/toasts-container/toasts-container.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

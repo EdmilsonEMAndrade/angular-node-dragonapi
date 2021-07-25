@@ -1,4 +1,4 @@
-export interface Dragon {
+export interface DragonInt {
     _id?: string;
     name: string;
     type: string;
@@ -8,5 +8,5 @@ export interface Dragon {
     updatedAt: Date
 }
 
-export type ShowDragon = Omit<Dragon, "createdAt" | "updatedAt">;
-export type registerDragon = Omit<Dragon, "_id" | "createdAt" | "updatedAt">;
+export type ShowDragon = Omit<DragonInt, "createdAt" | "updatedAt">;
+export type registerDragon = Omit<DragonInt, "_id" | "createdAt" | "updatedAt">;

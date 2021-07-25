@@ -3,7 +3,7 @@ const Dragon = require('../../models/Dragon');
 class DragonController {
     async index(req, res) {
         const { limit, page } = req.query;
-        var nDragons = 3;
+        var nDragons = 6;
         var pageView = 0;
         if(limit){
             nDragons = parseInt(limit);
