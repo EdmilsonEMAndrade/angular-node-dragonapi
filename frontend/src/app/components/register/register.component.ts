@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {FormGroup, FormControl} from '@angular/forms'
 
-import { ToastService } from 'src/app/services/toast.service';
+import { ToastService } from 'src/app/services/toast/toast.service';
 import { registerDragon } from '../dragon/dragon.model';
-import { DragonService } from '../dragon/dragon.service';
+import { DragonService } from '../dragon/service/dragon.service';
 import { DragonCla } from '../dragon/dragon'
+import { MenuService } from 'src/app/services/menu/menu.service';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +19,13 @@ export class RegisterComponent implements OnInit {
 
   constructor(private dragonService: DragonService, 
               private toastService: ToastService,
-              private router:Router) { }
+              private router:Router,
+              private menuService: MenuService) {
+                menuService.menuData={
+                  title: 'register',
+                  routeUrl: '/register'
+                }
+               }
 
 
   ngOnInit(): void {

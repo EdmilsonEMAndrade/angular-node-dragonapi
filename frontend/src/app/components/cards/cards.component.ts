@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ToastService } from 'src/app/services/toast.service';
+import { ToastService } from 'src/app/services/toast/toast.service';
 import { ShowDragon } from '../dragon/dragon.model';
-import { DragonService } from '../dragon/dragon.service';
+import { DragonService } from '../dragon/service/dragon.service';
 import {ListCardsComponent} from '../list-cards/list-cards.component'
 
 @Component({

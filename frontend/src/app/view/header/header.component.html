@@ -7,8 +7,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" routerLink="/">Dragões</a>
-                <a class="nav-link" routerLink="/register">Cadastrar</a>            
+                <a *ngIf='(title == "dragon"); else elseDragon'class="nav-link active" aria-current="page" routerLink="/">Dragões</a>
+                <ng-template #elseDragon><a class="nav-link" aria-current="page" routerLink="/">Dragões</a></ng-template>
+                <a *ngIf='(title == "register"); else elseCadastro' class="nav-link active" aria-current="page" routerLink="/register">Cadastrar</a>                
+                <ng-template #elseCadastro><a class="nav-link" routerLink="/register">Cadastrar</a> </ng-template>           
             </div>
         </div>
     </div>

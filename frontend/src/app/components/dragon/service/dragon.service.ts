@@ -1,11 +1,10 @@
 
 import { HttpClient } from '@angular/common/http';
-import { CATCH_ERROR_VAR } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
 import { EMPTY, Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { ToastService } from 'src/app/services/toast.service';
-import { DragonInt, registerDragon, ShowDragon } from './dragon.model';
+import { ToastService } from 'src/app/services/toast/toast.service';
+import { DragonInt, registerDragon, ShowDragon } from '../dragon.model';
 
 @Injectable({
   providedIn: 'root'
