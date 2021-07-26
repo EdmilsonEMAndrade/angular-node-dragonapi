@@ -21,9 +21,9 @@ export class DragonService {
       catchError(e => this.errorHandler(e) )
     );
   }  
-
-  index():Observable<DragonInt[]>{
-    return this.http.get<DragonInt[]>(this.baseURL);
+  
+  index(limit:number, page:number):Observable<DragonInt[]>{    
+    return this.http.get<DragonInt[]>(`${this.baseURL}?limit=${limit}&page=${page}`);
   }
 
   delete(dragon:ShowDragon):Observable<any>{

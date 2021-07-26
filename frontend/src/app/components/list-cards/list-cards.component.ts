@@ -12,7 +12,7 @@ export class ListCardsComponent implements OnInit {
   constructor(private dragonService: DragonService) { }
 
   ngOnInit(): void {
-    this.dragonService.index().subscribe(d =>{this.dragons= d})
+    this.dragonService.index(6,1).subscribe(d =>{this.dragons= d})
   }
 
 }
