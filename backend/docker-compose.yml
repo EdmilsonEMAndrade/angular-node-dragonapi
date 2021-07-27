@@ -1,0 +1,28 @@
+version: '3'
+services:
+    redis:
+        image: redis
+        command: redis-server --appendonly yes   
+        container_name: dragon-redis     
+        ports:
+            - "6379:6379"
+        networks: 
+            - dragon-network 
+    mongo:
+        image: mongo
+        container_name: dragon-mongo
+        networks: 
+            - dragon-network 
+    node:        
+        image: edmilsonemandrade/dragon-api
+        container_name: dragon-api
+        ports:
+            - "3000:3000"
+        networks: 
+            - dragon-network
+        depends_on: 
+            - "mongo"
+            - "redis"
+networks: 
+    dragon-network:
+        driver: bridge

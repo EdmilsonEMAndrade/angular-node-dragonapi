@@ -2,6 +2,7 @@ const DragonService = require('../../service/Dragon');
 const Dragon = require('../../models/Dragon');
 const HttpConstants = require('../../constants/http');
 const Cache = require('../../utils/Cache');
+const DragonConstants = require('../../constants/DragonConstants');
 
 class DragonController {
     async index(req, res) {
@@ -35,7 +36,7 @@ class DragonController {
             Cache.deleteAll();
             return res.status(HttpConstants.OK).json(updateDragon);
         }catch(err){
-            return res.status(HttpConstants.BadRequest).json({message: err.message});
+            return res.status(HttpConstants.BadRequest).json({message: DragonConstants.InvalidID});
         }
        
     }
@@ -45,7 +46,7 @@ class DragonController {
             Cache.deleteAll();
             return res.status(HttpConstants.NoContent).json({message:`Dragon was deleted`});
         }catch(err){
-            return res.status(HttpConstants.BadRequest).json({message: err.message});
+            return res.status(HttpConstants.BadRequest).json({message: DragonConstants.InvalidID});
         }
     }
 
